@@ -3,7 +3,6 @@ public class Quadratic{
 
 	public static void main(String[] args){
 		
-		
 		int a,b,c;
 		int x; 
 		
@@ -19,16 +18,21 @@ public class Quadratic{
 		Scanner in3 = new Scanner(System.in);
 		c = in3.nextInt();
 		
-		if ( a != 0 && Math.pow(b,2) - 4*a*c != 0){
-			return answer();
+		if ( a != 0 && Math.pow(b,2) - 4*a*c >= 0){
+			answer(a,b,c);
 		} else 
 			System.out.println("No Solution");
 		
-	 		public static void answer(){
+	}
 	
-			sqrt = Math.pow(b,2) - 4*a*c;
+	public static double answer(int a,int b,int c){
+			
+		double sqrt;
+		double x;
+			2
+		sqrt = Math.pow(b,2) - 4*a*c;
 	
-			x = (b-2*b + Math.sqrt(sqrt))/ (2*a);
-		}
+		x = (b - 2*b + Math.sqrt(sqrt)) / (2*a);
+		return x;
 	}
 }
